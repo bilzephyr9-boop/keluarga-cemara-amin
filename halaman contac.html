@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Kisah di Bawah Atap</title>
+    <link rel="stylesheet" href="css contac.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Kisah <span>di Bawah Atap</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="halaman tentang kami.html">Tentang Kami</a></li>
+                <li><a href="halaman galeri.html">Galeri</a></li>
+                <li><a href="halaman contac.html" class="active">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="vibrant-hero">
+        <div class="hero-badge">BUKU TAMU & PESAN</div>
+        <h1>Pintu Kami Selalu Terbuka</h1>
+        <p>Kirimkan sapaan, kesan, atau doa hangatmu melalui formulir di bawah ini.</p>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <div class="contact-info-card">
+                    <span class="tag tag-terracotta">SAPA KAMI</span>
+                    <h2>Kirim Salam untuk Keluarga</h2>
+                    <p class="info-desc">Terima kasih sudah singgah! Kami sangat senang membaca setiap pesan hangat dari
+                        teman dan sahabat.</p>
+
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon icon-terracotta">📍</div>
+                            <div>
+                                <h4>Alamat Rumah</h4>
+                                <p>Jl.Cempaka,KMP.PASIR SALAM,RW/RT 04/05</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon icon-sage">💌</div>
+                            <div>
+                                <h4>Email Hangat</h4>
+                                <p>keluarga@Besar Kimaya gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon icon-amber">☕</div>
+                            <div>
+                                <h4>Waktu Bersantai</h4>
+                                <p>Setiap Hari (Terutama Akhir Pekan)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <div class="form-header">
+                        <span class="tag tag-sage">FORMULIR PESAN</span>
+                        <h3>Isi Buku Tamu Digital</h3>
+                    </div>
+
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                            <input type="text" id="nama" placeholder="Masukkan nama lengkap Anda" required>
+                            <span class="error-msg" id="error-nama">Nama wajib diisi!</span>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="noWa">Nomor WhatsApp Anda <span class="required">*</span></label>
+                            <input type="tel" id="noWa" placeholder="Contoh: 081234567890" required>
+                            <span class="error-msg" id="error-noWa">Nomor WhatsApp wajib diisi!</span>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="subjek">Kategori Pesan <span class="required">*</span></label>
+                            <select id="subjek" required>
+                                <option value="" disabled selected>-- Pilih Kategori --</option>
+                                <option value="Saran & Masukan">Saran & Masukan</option>
+                                <option value="Kesan Kenangan">Kesan Kenangan Keluarga</option>
+                                <option value="Kunjungan Tamu">Janji Kunjungan Tamu</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                            <span class="error-msg" id="error-subjek">Silakan pilih kategori!</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="pilihKeluarga" class="form-label">Anggota Keluarga yang Ingin Ditemui</label>
+                            <div class="select-wrapper">
+                                <select id="pilihKeluarga" class="custom-select" required>
+                                    <option value="" disabled selected>-- Pilih Anggota Keluarga --</option>
+                                    <!-- Isi nomor WA masing-masing di atribut data-wa (Ganti angka 08xxx dengan nomor asli) -->
+                                    <option value="Udan Dana Rahmat" data-wa="6281322226621">1. Udan Dana Rahmat
+                                    </option>
+                                    <option value="Umi Sukmiati" data-wa="6281322226621">2. Umi Sukmiati
+                                    </option>
+                                    <option value="Intan Purnama Sari" data-wa="6281289146441">1. Intan Purnama Sari
+                                    </option>
+                                    <option value="Fauzi Azis" data-wa="6283177946676">3. Fauzi Azis</option>
+                                    <option value="Uswatun Hasanah" data-wa="6283172259585">4. Uswatun Hasanah</option>
+                                    <option value="Muhammad Ali Askari" data-wa="628989258565">5. Muhammad Ali Askari
+                                    </option>
+                                    <option value="Ali Mahdi" data-wa="6282156640596">6. Ali Mahdi</option>
+                                    <option value="Khalifah Azzahra" data-wa="62895352942505">7. Khalifah Azzahra
+                                    </option>
+                                    <option value="Dini Maulani Zamilah" data-wa="6282121045185">8. Dini Maulani Zamilah
+                                    </option>
+                                    <option value="Abuzar Algifari" data-wa="6285703819671">9. Abuzar Algifari</option>
+                                    <option value="Nayshila Nursyamsiah" data-wa="6283852121400">10. Nayshila
+                                        Nursyamsiah
+                                    </option>
+                                    <option value="Rehan Fazruh Rahmat" data-wa="6283874782056">11. Rehan Fazruh Rahmat
+                                    </option>
+                                    <option value="Maariz Almuntaha" data-wa="6281230641264">12. Maariz Almuntaha
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="jamTamu">Rencana Jam Kedatangan <span class="required">*</span></label>
+                            <input type="time" id="jamTamu" required>
+                            <small class="hint-text">⏰ Jam penerimaan tamu: 09.00 - 19.00 WIB</small>
+                            <span class="error-msg" id="error-jam">Silakan pilih jam kedatangan!</span>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="pesan">Pesan / Kesan <span class="required">*</span></label>
+                            <textarea id="pesan" rows="4" placeholder="Tuliskan pesan atau kesan Anda di sini..."
+                                maxlength="300" required></textarea>
+                            <div class="char-counter"><span id="charCount">0</span>/300 Karakter</div>
+                            <span class="error-msg" id="error-pesan">Pesan tidak boleh kosong!</span>
+                        </div>
+
+
+                        <button type="submit" id="submitBtn" class="btn-submit">
+                            <span id="btnText">Kirim Pesan ke WhatsApp</span>
+                            <span id="btnIcon">🚀</span>
+                        </button>
+                    </form>
+
+
+                    <script src="script-kontak.js"></script>
+
+                    <footer class="main-footer">
+                        <div class="container">
+                            <p class="footer-logo">Kisah <span>di Bawah Atap</span></p>
+                            <p class="copy">&copy; 2026 Dibuat dengan penuh cinta & kedamaian keluarga.</p>
+                        </div>
+                    </footer>
+                    <script src="script-kontak.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,464 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(228, 218, 208, 0.6);
+    padding: 16px 0;
+}
+
+.nav-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1d2d44;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #e07a5f;
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    background: #f4ece1;
+    padding: 6px;
+    border-radius: 40px;
+    border: 1px solid #eadbce;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #5c544d;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav-links li a:hover {
+    color: #e07a5f;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.nav-links li a.active {
+    color: #ffffff !important;
+    background: #e07a5f !important;
+    box-shadow: 0 4px 12px rgba(224, 122, 95, 0.3);
+}
+
+.contact-section {
+    padding: 70px 0 100px;
+    background-color: #faf6f0;
+}
+
+.gallery-section {
+    padding: 50px 20px;
+    background-color: #fcfbf9;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1b4332;
+    /* Warna Sage Tua */
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.gallery-subtitle {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #8d99ae;
+    margin-bottom: 35px;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f0eae1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(224, 122, 95, 0.2);
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.04);
+
+}
+
+
+.gallery-item video {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    background-color: #000000;
+    border: none;
+}
+
+.gallery-caption {
+    padding: 12px 16px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #1b4332;
+    background-color: #ffffff;
+    text-align: center;
+    border-top: 1px solid #f4efe8;
+}
+
+/* Penyesuaian Tampilan untuk Layar HP */
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        /* Tampil 1 kolom memanjang di HP */
+        gap: 15px;
+    }
+
+    .gallery-item img,
+    .gallery-item video {
+        height: 200px;
+    }
+}
+
+
+.galeri-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: 1100px !important;
+    margin: 30px auto !important;
+    padding: 0 15px !important;
+    box-sizing: border-box !important;
+}
+
+
+.galeri-card {
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    border: 1px solid #e07a5f !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08) !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.galeri-card img,
+.galeri-card video {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    display: block !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.galeri-text {
+    padding: 10px !important;
+    margin: 0 !important;
+    text-align: center !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    color: #1b4332 !important;
+    /* Warna Sage */
+    background: #ffffff !important;
+}
+
+/* Responsif Galeri untuk Layar HP & Tablet */
+@media (max-width: 992px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.music-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    background-color: #ffffff;
+    color: #1b4332;
+    border: 2px solid #e07a5f;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.music-btn:hover {
+    background-color: #e07a5f;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(224, 122, 95, 0.3);
+}
+
+.music-btn.playing {
+    background-color: #e07a5f;
+    color: #ffffff;
+    border-color: #e07a5f;
+}
+
+.music-btn.playing #music-icon {
+    animation: pulse-icon 1.2s infinite alternate;
+}
+
+@keyframes pulse-icon {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.25);
+    }
+}
+
+/* =========================================================
+   1. BACKGROUND SUPER TERANG BERCAHAYA & NEON GLOW 3D (GALERI)
+   ========================================================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #110e2e;
+    color: #ffffff;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Cahaya Neon berpijar terang */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255, 0, 128, 0.75) 0%, transparent 45%),
+        radial-gradient(circle at 85% 30%, rgba(0, 212, 255, 0.8) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(138, 43, 226, 0.85) 0%, transparent 55%);
+    z-index: -2;
+    animation: neonPulse 6s ease-in-out infinite alternate;
+}
+
+/* Pola Grid 3D Putih Terang Menyala */
+body::after {
+    content: '';
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.25) 1.5px, transparent 1.5px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.25) 1.5px, transparent 1.5px);
+    background-size: 60px 60px;
+    transform: perspective(600px) rotateX(60deg);
+    z-index: -1;
+    animation: gridMove 15s linear infinite;
+}
+
+/* =========================================================
+   2. KARTU & BINGKAI FOTO GALERI (GLASSMORPHISM 3D)
+   ========================================================= */
+.container,
+.gallery-container,
+.gallery-grid {
+    position: relative;
+    z-index: 1;
+}
+
+/* Bingkai Kaca untuk Foto */
+.gallery-item,
+.card,
+.card-foto,
+.bingkai {
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(20px) saturate(200%);
+    -webkit-backdrop-filter: blur(20px) saturate(200%);
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 20px !important;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(0, 212, 255, 0.5),
+        inset 0 0 15px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Efek Hover Kartu Foto Terangkat & Menyala */
+.gallery-item:hover,
+.card:hover,
+.card-foto:hover,
+.bingkai:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #00d4ff !important;
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 0 50px rgba(255, 0, 128, 0.8),
+        0 0 80px rgba(0, 212, 255, 0.8) !important;
+}
+
+/* Styling Gambar di Dalam Bingkai */
+.gallery-item img,
+.card img,
+.card-foto img,
+.bingkai img {
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img,
+.card:hover img,
+.card-foto:hover img {
+    transform: scale(1.05);
+}
+
+/* =========================================================
+   3. TEKS JUDUL GLOWING
+   ========================================================= */
+h1,
+h2,
+h3,
+.title {
+    color: #ffffff !important;
+    text-shadow:
+        0 0 10px #00d4ff,
+        0 0 20px #00d4ff,
+        0 0 40px #ff0080,
+        0 0 80px #ff0080;
+    font-weight: 800;
+}
+
+/* =========================================================
+   4. ANIMASI BERCAHAYA
+   ========================================================= */
+@keyframes neonPulse {
+    0% {
+        filter: hue-rotate(0deg) brightness(1.2);
+    }
+
+    100% {
+        filter: hue-rotate(60deg) brightness(1.6);
+    }
+}
+
+@keyframes gridMove {
+    0% {
+        transform: perspective(600px) rotateX(60deg) translateY(0);
+    }
+
+    100% {
+        transform: perspective(600px) rotateX(60deg) translateY(60px);
+    }
+}
+
+span,
+li,
+label,
+.card-text,
+.description {
+    color: #ffffff !important;
+    /* Memberikan bayangan hitam tipis di belakang teks agar terbaca jelas */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important;
+    font-weight: 500 !important;
+}
+
+/* =========================================================
+   PERBAIKAN WARNA TEKS AGAR KONTRAS & MUDAH DIBACA
+   ========================================================= */
+
+/* 1. Judul Utama (Lebih Gelap & Menyala Tegas) */
+h1,
+h2,
+h3,
+.title {
+    color: #00f2fe !important;
+    /* Warna cyan neon tegas */
+    text-shadow:
+        0 0 5px rgba(0, 0, 0, 0.9),
+        0 0 10px rgba(0, 242, 254, 0.6) !important;
+    font-weight: 800 !important;
+}
+
+/* 2. Teks Isi / Paragraf / Deskripsi */
+p,
+span,
+li,
+label,
+.card-text,
+.description {
+    color: #ffffff !important;
+    /* Memberikan bayangan hitam tipis di belakang teks agar terbaca jelas */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important;
+    font-weight: 500 !important;
+}
+
+/* 3. Latar Belakang Kartu / Kaca Dipergelap Sedikit Agar Teks Kontras */
+.container,
+.gallery-item,
+.card,
+.card-foto,
+.contact-container,
+.about-card {
+    background: rgba(10, 15, 30, 0.65) !important;
+    /* Diubah ke warna gelap transparan */
+    border: 1.5px solid rgba(0, 212, 255, 0.5) !important;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Kisah di Bawah Atap</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css halaman galery.css">
+</head>
+
+<body>
+
+    <div class="music-player">
+        <button id="musicToggleGallery" class="music-btn" type="button" onclick="playGalleryMusic(event)">
+            <audio id="bgMusicGallery" loop preload="auto">
+                <source src="video galeri.mp4" type="audio/mpeg">
+            </audio>
+            <span id="musicIconG">🎵</span>
+            <span>Musik Galeri</span>
+        </button>
+    </div>
+
+    <script>
+        function playGalleryMusic(e) {
+            e.stopPropagation();
+            const audio = document.getElementById('bgMusicGallery');
+            const icon = document.getElementById('musicIconG');
+            const btn = document.getElementById('musicToggleGallery');
+
+            audio.volume = 0.6;
+            if (audio.paused) {
+                audio.play();
+                btn.classList.add('playing');
+                icon.textContent = '🔊';
+            } else {
+                audio.pause();
+                btn.classList.remove('playing');
+                icon.textContent = '🎵';
+            }
+        }
+    </script>
+</body>
+
+</html>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Kisah <span>di Bawah Atap</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="halaman tentang kami.html">Tentang Kami</a></li>
+            <li><a href="halaman galeri.html">Galeri</a></li>
+            <li><a href="halaman contac.html">Kontak</a></li>
+        </ul>
+    </div>
+</nav>
+<section class="family-section">
+    <div class="container">
+
+        <section class="gallery-hero">
+            <div class="container">
+                <span class="hero-badge">Dokumentasi Kenangan</span>
+                <h1>Galeri & Momen Indah</h1>
+                <p>Setiap detik yang terekam adalah cerita kehangatan keluarga besar kami.</p>
+            </div>
+        </section>
+
+
+        <section class="gallery-section">
+            <div class="container">
+
+
+                <div class="video-gallery-grid">
+
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <video controls>
+                                <source src="video oo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-card-body">
+                            <h3>Lembaran Cerita Kita</h3>
+                            <p>Suasana hangat saat seluruh saudara kumpul bersama di rumah utama. Kumpulan memori manis
+                                yang dirangkai jadi satu.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <video controls>
+                                <source src="vid2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-card-body">
+                            <h3>Tabur Kebahagiaan & Syukuran</h3>
+                            <p>Tawa dan keceriaan saat merayakan momen spesial bersama. Melestarikan tradisi nyawer
+                                sebagai bentuk rasa syukur.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <video controls>
+                                <source src="vid3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-card-body">
+                            <h3>Acara Buka Puasa Bersama</h3>
+                            <p>Indahnya kebersamaan dalam kesederhanaan. Senang rasanya bisa berkumpul dan berbuka puasa
+                                bersama keluarga.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <video controls>
+                                <source src="pakmk.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-card-body">
+                            <h3>Momen Spesial</h3>
+                            <p>Kenangan berharga yang diabadikan dalam suasana penuh kehangatan.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="gallery-grid">
+
+
+                    <div class="gallery-card">
+                        <div class="gallery-thumb">
+                            <img src="bg.jpeg" alt="Momen 1">
+                        </div>
+                        <div class="gallery-card-body">
+                            <h3>Acara Syukuran</h3>
+                            <p>Kebersamaan dan doa bersama seluruh anggota keluarga.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="gallery-thumb">
+                            <img src="liwet.jpeg" alt="Momen 2">
+                        </div>
+                        <div class="gallery-card-body">
+                            <h3>Makan Bersama</h3>
+                            <p>keseruan makan lesehan bersama keluarga besar</p>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-card">
+                        <div class="gallery-thumb">
+                            <img src="makpa.jpeg" alt="Momen 3">
+                        </div>
+                        <div class="gallery-card-body">
+                            <h3>Orang yang sangat berarti</h3>
+                            <p>Sehat terus ya mak,pak tunggu anak-anaknya sukses </p>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <audio id="bg-music" loop preload="auto">
+            <!-- Pastikan nama file sesuai dengan file mp3 yang kamu download -->
+            <source src="video bg.mp4" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+
+
+        <button id="music-toggle-btn" class="music-btn" title="Putar / Hentikan Musik">
+            <span id="music-icon">🎵</span>
+            <span id="music-text">Musik Galeri</span>
+        </button>
+
+
+        <script>
+            const music = document.getElementById('bg-music');
+            const musicBtn = document.getElementById('music-toggle-btn');
+            const musicIcon = document.getElementById('music-icon');
+            const musicText = document.getElementById('music-text');
+
+            let isPlaying = false;
+
+            musicBtn.addEventListener('click', function () {
+                if (isPlaying) {
+                    music.pause();
+                    musicIcon.textContent = '🎵';
+                    musicText.textContent = 'Musik Galeri';
+                    musicBtn.classList.remove('playing');
+                } else {
+                    music.play();
+                    musicIcon.textContent = '🔊';
+                    musicText.textContent = 'Jeda Musik';
+                    musicBtn.classList.add('playing');
+                }
+                isPlaying = !isPlaying;
+            });
+        </script>
+        <style>
+            .galeri-grid,
+            div[class*="gallery"],
+            div[class*="galeri"] {
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+                gap: 20px !important;
+                max-width: 1100px !important;
+                margin: 30px auto !important;
+                padding: 0 15px !important;
+                box-sizing: border-box !important;
+            }
+
+            .galeri-grid>div,
+            div[class*="gallery"]>div,
+            div[class*="galeri"]>div {
+                background: #ffffff !important;
+                border-radius: 12px !important;
+                overflow: hidden !important;
+                border: 1px solid #e07a5f !important;
+                /* Terracotta */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08) !important;
+                display: flex !important;
+                flex-direction: column !important;
+            }
+
+            .galeri-grid img,
+            .galeri-grid video,
+            div[class*="gallery"] img,
+            div[class*="gallery"] video,
+            div[class*="galeri"] img,
+            div[class*="galeri"] video {
+                width: 100% !important;
+                height: 220px !important;
+                /* Dikunci sama rata */
+                object-fit: cover !important;
+                /* Foto/video anti-gepeng */
+                display: block !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        </style>
+
+        </body>
+
+        </html>

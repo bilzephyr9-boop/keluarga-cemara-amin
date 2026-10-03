@@ -1,0 +1,569 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f8f9fa;
+    color: #2b2d42;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(228, 218, 208, 0.6);
+    padding: 16px 0;
+}
+
+.nav-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1d2d44;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #e07a5f;
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    background: #f4ece1;
+    padding: 6px;
+    border-radius: 40px;
+    border: 1px solid #eadbce;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #5c544d;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav-links li a:hover {
+    color: #e07a5f;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.nav-links li a.active {
+    color: #ffffff !important;
+    background: #e07a5f !important;
+    box-shadow: 0 4px 12px rgba(224, 122, 95, 0.3);
+}
+
+.contact-section {
+    padding: 70px 0 100px;
+    background-color: #faf6f0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 36px;
+    align-items: stretch;
+}
+
+.contact-info-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px 32px;
+    border: 1px solid #eadbce;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1d2d44;
+    margin: 8px 0;
+}
+
+.info-desc {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #fdfbf7;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid #f0e6dd;
+}
+
+.info-icon {
+    font-size: 1.4rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-terracotta {
+    background: #fde8e3;
+}
+
+.icon-sage {
+    background: #e8f3ee;
+}
+
+.icon-amber {
+    background: #fef3e2;
+}
+
+.info-item h4 {
+    font-size: 0.95rem;
+    color: #1d2d44;
+    margin-bottom: 2px;
+}
+
+.info-item p {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #1b4332;
+    background-color: #e8f5e9;
+    font-weight: 600;
+}
+
+.luxury-hero {
+    background: linear-gradient(rgba(27, 67, 50, 0.82), rgba(27, 67, 50, 0.82)),
+        url('bg.jpeg') center/cover no-repeat;
+    padding: 120px 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.hero-tag {
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #80ed99;
+    margin-bottom: 16px;
+}
+
+.luxury-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    line-height: 1.25;
+}
+
+.luxury-hero p {
+    font-size: 1.1rem;
+    color: #e8f5e9;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-emerald {
+    background-color: #52b788;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(82, 183, 136, 0.3);
+}
+
+.btn-emerald:hover {
+    background-color: #40916c;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+
+.home-features {
+    padding: 80px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 14px;
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.badge.warm {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #1b4332;
+}
+
+.line-decor {
+    width: 50px;
+    height: 3px;
+    background: #52b788;
+    margin: 14px auto 0;
+    border-radius: 2px;
+}
+
+.grid-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    border-color: #b7e4c7;
+    box-shadow: 0 12px 30px rgba(27, 67, 50, 0.08);
+}
+
+.icon-box {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+}
+
+.feature-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    color: #1b4332;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #6c757d;
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.family-preview {
+    padding-bottom: 80px;
+}
+
+.preview-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 50px 40px;
+    border: 1px solid #e9ecef;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.preview-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #1b4332;
+    margin: 12px 0;
+}
+
+.preview-box p {
+    color: #6c757d;
+    font-size: 1rem;
+    max-width: 680px;
+    margin: 0 auto 24px;
+}
+
+.btn-text {
+    color: #1b4332;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.btn-text:hover {
+    color: #40916c;
+}
+
+.main-footer {
+    background: #1b4332;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.footer-logo span {
+    color: #80ed99;
+    font-style: italic;
+}
+
+.copy {
+    font-size: 0.85rem;
+    color: #b7e4c7;
+}
+
+/* Responsive (Layar HP) */
+@media (max-width: 992px) {
+    .grid-three {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-three {
+        grid-template-columns: 1fr;
+    }
+
+    .luxury-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+/* =========================================================
+   1. PERJELAS BACKGROUND ASLI (TIDAK DIGANTI) & TAMBAH EFEK GLOW
+   ========================================================= */
+body {
+    position: relative;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    /* Memberikan efek kontras dan kecerahan pada background asli */
+    backdrop-filter: brightness(0.85) contrast(1.15);
+    min-height: 100vh;
+}
+
+/* Overlay Cahaya Neon di atas Background Asli agar suasana lebih hidup */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(0, 212, 255, 0.25) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(255, 0, 128, 0.25) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: -1;
+    animation: homePulse 8s ease-in-out infinite alternate;
+}
+
+/* =========================================================
+   2. TEKS UTAMA & JUDUL SUPER JELAS, TEGAS, BERCAHAYA 3D
+   ========================================================= */
+/* Judul Utama / Banner Home */
+h1,
+.hero-title,
+.main-title {
+    color: #ffffff !important;
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    /* Kombinasi stroke hitam & glow neon cyan-pink agar sangat jelas dibaca */
+    text-shadow:
+        2px 2px 0px #000,
+        -2px -2px 0px #000,
+        2px -2px 0px #000,
+        -2px 2px 0px #000,
+        0 0 15px #00d4ff,
+        0 0 30px #ff0080 !important;
+}
+
+/* Sub-Judul & Heading Lainnya */
+h2,
+h3,
+.sub-title {
+    color: #00ffff !important;
+    /* Warna Cyan Menyala */
+    font-weight: 800 !important;
+    text-shadow:
+        1px 1px 3px #000000,
+        0 0 10px rgba(0, 255, 255, 0.8) !important;
+}
+
+/* Teks Deskripsi / Paragraf Utama Home (Super Kontras & Mudah Dibaca) */
+p,
+.description,
+.hero-text,
+li {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    line-height: 1.6;
+    /* Outline hitam di sekeliling huruf agar tidak silau & terbaca tegas */
+    text-shadow:
+        1px 1px 2px #000000,
+        -1px -1px 2px #000000,
+        1px -1px 2px #000000,
+        -1px 1px 2px #000000,
+        0 0 8px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* =========================================================
+   3. KARTU KONTEN HOME / CONTAINER (EFEK KACA KANOPY GELAP)
+   ========================================================= */
+.container,
+.hero-section,
+.card,
+.content-box {
+    background: rgba(10, 15, 30, 0.65) !important;
+    /* Latar kaca gelap transparan agar tulisan makin menonjol */
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    border: 2px solid rgba(0, 212, 255, 0.5) !important;
+    border-radius: 20px !important;
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.5),
+        0 0 25px rgba(0, 212, 255, 0.4) !important;
+    padding: 25px;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.container:hover,
+.hero-section:hover,
+.card:hover {
+    transform: translateY(-5px) scale(1.01);
+    border-color: #ff0080 !important;
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.6),
+        0 0 35px rgba(255, 0, 128, 0.7) !important;
+}
+
+/* =========================================================
+   4. TOMBOL NAVIGASI / BUTTON DI HOME AGAR SANGAT MENARIK
+   ========================================================= */
+button,
+.btn,
+.cta-button {
+    background: linear-gradient(135deg, #00d4ff 0%, #ff0080 100%) !important;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px 28px !important;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6) !important;
+    cursor: pointer;
+    transition: all 0.3s ease !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover,
+.btn:hover,
+.cta-button:hover {
+    transform: translateY(-3px) scale(1.05) !important;
+    box-shadow: 0 0 35px rgba(255, 0, 128, 0.9) !important;
+}
+
+/* =========================================================
+   5. ANIMASI CAHAYA LAMPU
+   ========================================================= */
+@keyframes homePulse {
+    0% {
+        filter: hue-rotate(0deg) brightness(1);
+    }
+
+    100% {
+        filter: hue-rotate(40deg) brightness(1.2);
+    }
+}

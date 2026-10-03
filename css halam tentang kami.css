@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #fdfbf7;
+    color: #333333;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(228, 218, 208, 0.6);
+    padding: 16px 0;
+}
+
+.nav-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1d2d44;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #e07a5f;
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    background: #f4ece1;
+    padding: 6px;
+    border-radius: 40px;
+    border: 1px solid #eadbce;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #5c544d;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav-links li a:hover {
+    color: #e07a5f;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.nav-links li a.active {
+    color: #ffffff !important;
+    background: #e07a5f !important;
+    box-shadow: 0 4px 12px rgba(224, 122, 95, 0.3);
+}
+
+.contact-section {
+    padding: 70px 0 100px;
+    background-color: #faf6f0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 36px;
+    align-items: stretch;
+}
+
+
+.contact-info-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px 32px;
+    border: 1px solid #eadbce;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1d2d44;
+    margin: 8px 0;
+}
+
+.info-desc {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #fdfbf7;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid #f0e6dd;
+}
+
+.info-icon {
+    font-size: 1.4rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-terracotta {
+    background: #fde8e3;
+}
+
+.icon-sage {
+    background: #e8f3ee;
+}
+
+.icon-amber {
+    background: #fef3e2;
+}
+
+.info-item h4 {
+    font-size: 0.95rem;
+    color: #1d2d44;
+    margin-bottom: 2px;
+}
+
+.info-item p {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* HERO SECTION */
+.about-hero {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background-color: #fdfbf7;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #f4f1de;
+    color: #e07a5f;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3rem;
+    color: #1b4332;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+}
+
+/* TITLES */
+.section-title-wrap {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title-wrap h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1b4332;
+    margin-bottom: 6px;
+}
+
+.section-title-wrap p {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* PROFILES SECTION */
+.profiles-section {
+    padding: 30px 20px 80px;
+}
+
+.profiles-section .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* GRID LAYOUTS */
+.parents-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.parents-grid .profile-card {
+    max-width: 300px;
+    width: 100%;
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+/* CARDS */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px 15px;
+    text-align: center;
+    border: 1px solid #f0eae1;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.card-image-wrap {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.card-image-wrap a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e07a5f;
+}
+
+.card-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.memorial-tag {
+    display: inline-block;
+    color: #e07a5f;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.profile-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #1b4332;
+    margin-bottom: 4px;
+}
+
+.birth-info {
+    font-size: 0.82rem;
+    color: #e07a5f;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.bio {
+    font-size: 0.85rem;
+    color: #6c757d;
+    line-height: 1.4;
+}
+
+.profile-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.meta-gender {
+    color: #81b29a;
+}
+
+.meta-status {
+    color: #e07a5f;
+}
+
+.marriage-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.status-single {
+    background-color: #f0f0f0;
+    color: #6c757d;
+}
+
+.status-married {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.music-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    background-color: #ffffff;
+    color: #1b4332;
+    border: 2px solid #e07a5f;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.music-btn:hover {
+    background-color: #e07a5f;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(224, 122, 95, 0.3);
+}
+
+.music-btn.playing {
+    background-color: #e07a5f;
+    color: #ffffff;
+    border-color: #e07a5f;
+}
+
+.music-btn.playing #music-icon {
+    animation: pulse-icon 1.2s infinite alternate;
+}
+
+@keyframes pulse-icon {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.25);
+    }
+}
+
+/* =========================================================
+   1. BACKGROUND SUPER TERANG BERCAHAYA & NEON GLOW 3D
+   ========================================================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* Background dasar bernuansa ungu-biru neon terang */
+    background: #110e2e;
+    color: #ffffff;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Cahaya Neon berpijar terang (3 Titik Lampu Utama) */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255, 0, 128, 0.7) 0%, transparent 45%),
+        radial-gradient(circle at 85% 30%, rgba(0, 212, 255, 0.75) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(138, 43, 226, 0.8) 0%, transparent 55%);
+    z-index: -2;
+    animation: neonPulse 6s ease-in-out infinite alternate;
+}
+
+/* Pola Grid 3D Putih Terang Menyala */
+body::after {
+    content: '';
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.25) 1.5px, transparent 1.5px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.25) 1.5px, transparent 1.5px);
+    background-size: 60px 60px;
+    transform: perspective(600px) rotateX(60deg);
+    z-index: -1;
+    animation: gridMove 15s linear infinite;
+}
+
+/* =========================================================
+   2. KARTU KONTEN DENGAN KACA BENING & LIST CAHAYA
+   ========================================================= */
+.container,
+.about-card,
+.card {
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(20px) saturate(200%);
+    -webkit-backdrop-filter: blur(20px) saturate(200%);
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 20px !important;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(0, 212, 255, 0.5),
+        inset 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Efek Hover Kartu Makin Terang Menyala */
+.container:hover,
+.about-card:hover,
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #00d4ff !important;
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 0 50px rgba(255, 0, 128, 0.8),
+        0 0 80px rgba(0, 212, 255, 0.8);
+}
+
+/* =========================================================
+   3. TEKS JUDUL SUPER GLOWING
+   ========================================================= */
+h1,
+h2,
+.title {
+    color: #ffffff !important;
+    text-shadow:
+        0 0 10px #00d4ff,
+        0 0 20px #00d4ff,
+        0 0 40px #ff0080,
+        0 0 80px #ff0080;
+    font-weight: 800;
+}
+
+/* =========================================================
+   4. ANIMASI BERCAHAYA
+   ========================================================= */
+@keyframes neonPulse {
+    0% {
+        filter: hue-rotate(0deg) brightness(1.2);
+    }
+
+    100% {
+        filter: hue-rotate(60deg) brightness(1.6);
+    }
+}
+
+@keyframes gridMove {
+    0% {
+        transform: perspective(600px) rotateX(60deg) translateY(0);
+    }
+
+    100% {
+        transform: perspective(600px) rotateX(60deg) translateY(60px);
+    }
+}
